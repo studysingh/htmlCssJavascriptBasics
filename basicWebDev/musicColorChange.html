@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Barriecito', cursive;
+        }
+
+        body {
+            height: 1vh;
+            width: 100%;
+            position: sticky;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-image: url('https://media1.tenor.com/images/18a0a33c874e26a55fe2456347567ae9/tenor.gif?itemid=16911003');
+            background-size: cover;
+            /* background-color: red; */
+            align-items: center;
+            justify-content: center;
+        }
+
+        #col {
+            width: 100%;
+            height: 50px;
+            color: rgb(34, 134, 124);
+            font-weight: 800;
+            font-size: 30px;
+            background: linear-gradient(to right, red, green, blue);
+            border-radius: 25px;
+            word-spacing: 35px;
+            letter-spacing: 10px;
+        }
+
+        #col:hover {
+            transform: scale(0.9);
+            border: 5px solid white;
+            color: black;
+        }
+
+        #spotify {
+            width: 60%;
+            height: 250px;
+            margin-bottom: 200px;
+        }
+
+        /* #spotify:hover{
+            transform: rotate(40deg);
+        } */
+    </style>
+</head>
+
+<body>
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/artist/4YRxDV8wJFPHPTeXepOstw?utm_source=generator" width="100%"
+        height="352" frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+        id="spotify"></iframe>
+    <button id="col">Change Color</button>
+</body>
+<script>
+    let c1 = [];
+    for (let i = 0; i < 256; i++) {
+        c1.push(i);
+    }
+    let x = document.querySelector("#col");
+    let bdy = document.querySelector("body")
+    let spotify = document.getElementById("spotify");
+    function changeAngle(obj) {
+        if (obj.angle > 359) obj.angle = 0;
+        else {
+            obj.angle = obj.angle + 1;
+        }
+    }
+    let obj = {
+        angle: 0
+    }
+    function rotation() {
+        changeAngle(obj)
+        // let styling = `transform: rotate(40deg);`;
+        let styling = `transform: rotate(${obj.angle}deg);`;
+        // bdy.style = styling;
+        spotify.style = styling;
+    }
+    function changeColor() {
+        let a = c1[Math.floor(Math.random() * (c1.length))];
+        let b = c1[Math.floor(Math.random() * (c1.length))];
+        let c = c1[Math.floor(Math.random() * (c1.length))];
+        let d = 1;
+        document.body.style.background = `rgb(${a},${b},${c},${d})`;
+        // work2
+
+    }
+    function toclick() {
+        setInterval(changeColor, 10);
+        setInterval(changeColor, 20);
+        setInterval(changeColor, 30);
+        setInterval(changeColor, 45);
+        // setInterval(rotation, 40);
+    }
+    x.addEventListener("click", toclick)
+</script>
+
+</html>

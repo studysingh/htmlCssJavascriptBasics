@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend><b>Form</b></legend>
+            <label for="name">Name</label>
+            <input type="name" id="name" required="" maxlength="4">
+            <hr>
+            <label for="age">Age</label>
+            <input type="number" id="age" autofocus="" min="18" max="65">
+            <hr>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="m">
+            <label for="m">Male</label>
+            <input type="radio" name="gender" id="f" checked="">
+            <label for="f">Female</label>
+            <hr>
+            <span>Hobby</span>
+            <input type="checkbox" id="playing">
+            <label for="playing">playing</label>
+            <input type="checkbox" id="reading">
+            <label for="reading">reading</label>
+            <input type="checkbox" id="walking" checked="">
+            <label for="walking">walking</label>
+            <hr>
+            <label for="range">range</label>
+            <input type="range" id="range" name="range" min="60" max="600" value="500"> 
+            <hr>
+            <input type="text" value="I agree to the terms and conditions" readonly="">
+            <hr>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>

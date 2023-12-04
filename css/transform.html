@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        /* translate */
+        .first{
+            height: 80px;
+            width: 80px;
+            border: 2px solid black;
+            transform: translate(25px,25px);
+        }
+        /* skew */
+        .second{
+            height: 80px;
+            width: 80px;
+            border: 2px dashed green;
+            margin: auto;
+            transform: skew(0deg,20deg);
+        }
+        /* multiple function */
+        .third{
+            border: 5px solid black;
+            height: 80px;
+            width: 80px;
+            transform: translate(200px,30px) skew(-30deg);
+            text-align: center;
+        }
+        .rotate{
+            height: 80px;
+            width: 80px;
+            border: 3px solid blue;
+            margin: auto;
+            transform: rotateX(50deg) rotateY(45deg) rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="first">
+        translate() function
+    </div>
+    <div class="second">
+        skew function
+    </div>
+    <div class="third">
+        multiple transform function
+    </div>
+    <div class="rotate">
+        Rotation
+    </div>
+</body>
+</html>

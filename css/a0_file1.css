@@ -1,0 +1,18 @@
+#bookmarks{
+    color : orange;
+    background-color: lightgreen;
+}
+#electronics{
+    color : red;
+}
+details{
+    color : green;
+    font-style: italic;
+    font-size: 50px;
+    text-decoration: underline;
+}
+ul{
+    color : blueviolet;
+    font-style: normal;
+    font-size: 20px;
+}

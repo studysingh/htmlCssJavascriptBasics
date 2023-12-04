@@ -1,0 +1,40 @@
+#mainpage{
+    height: 500px;
+    width: 500px;
+}
+fieldset{
+    display: inline-block;
+    position: relative;
+    /* left: 530px; */
+    /* right: 2000px; */
+    bottom: 100px;
+    left: 200px;
+    border: 10;
+    border-spacing: 5625cap;
+    border-width: 10px;
+    border-image-width: 20px;
+}
+#login_button{
+    color: white;
+    text-decoration-color: white;
+    background-color: rgba(13, 87, 214, 0.941);
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    border-radius: 6%;
+    border
+}
+#facebook{
+    
+    width: 20px;
+    height: 20px;
+    
+}
+p{
+    text-align: center;
+}
+#forgot{
+    border: 0px;
+    background-color: white;
+    text-align: center;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 1500px;
+            height: 660px;
+            border: 2px solid black;
+        }
+        .cloud1{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            top: 20px;
+            animation-name: cloud1;
+            animation-duration: 9s;
+            animation-iteration-count: 6;
+            animation-direction: alternate-reverse;
+        }
+        .cloud2{
+            width: 199px;
+            height: 180px;
+            background-image: url('cloud2.jpg');
+            background-size: cover;
+            position: relative;
+            left: 1200px;
+            bottom: 200px;
+            animation-name: cloud2;
+            animation-direction: alternate-reverse;
+            animation-duration: 20s;
+            animation-iteration-count: 4;
+        }
+        .sun{
+            width: 100px;
+            height: 100px;
+            background-image: url('sun.jpg');
+            background-size: cover;
+            position: relative;
+            left: 600px;
+            bottom: 300px;
+            animation-direction: alternate-reverse;
+            animation-name: sun;
+            animation-duration: 25s;
+            animation-iteration-count: 2;
+        }
+        @keyframes sun{
+            0%{
+                top: -300px;
+                left: 0px;
+                opacity: 0;
+            }
+            25%{
+                top: -225px;
+                left: 250px;
+                opacity: 0.5;
+            }
+            55%{
+                top: -215px;
+                left: 1100px;
+                opacity: 1;
+            }
+            75%{
+                top: -250px;
+                left: 1120px;
+                opacity: 0.4;
+            }
+            100%{
+                top: 0px;
+                left: 20px;
+            }
+        }
+        @keyframes cloud2{
+            0%{
+                opacity: 0.3;
+                top: -180px;
+                left: 1100;
+            }
+            20%{
+                opacity: 0.6;
+                top: -190px;
+                left: 800px;
+            }
+            40%{
+                opacity: 1;
+                top: -150px;
+                left: 600px;
+            }
+            60%{
+                opacity: 0.8;
+                top: -160px;
+                left: 400px;
+            }
+            80%{
+                opacity: 0.5;
+                top: -140px;
+                left: 200px;
+            }
+            100%{
+                opacity: 1;
+                top: -180;
+                left: 20px;
+            }
+        }
+        @keyframes cloud1{
+            0%{
+                opacity: 1;
+                top: 20px;
+                left: 20px;
+            }
+            20%{
+                opacity: 0.5;
+                top: 10px;
+                left: 400px;
+            }
+            50%{
+                opacity: 0.78;
+                top: 40px;
+                left: 600px;
+            }
+            70%{
+                opacity: 1;
+                top: 30px;
+                left: 800px;
+            }
+            90%{
+                opacity: 0.4;
+                top: 20px;
+                left: 1000px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="cloud1">
+        <img src="cloud.jpg" alt="" width="100%" height="100%">
+    </div>
+    <div class="cloud2"></div>
+    <div class="sun"></div>
+    </div>
+</body>
+</html>

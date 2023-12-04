@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --colorng: violet;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #one{
+            --coloring: green;
+            border: 2px solid var(--coloring);
+            width: 600px;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: inset 80px 80px 5px 5px var(--coloring);
+        }
+        #image{
+            width: 150px;
+            height: 150px;
+            border: 2px solid green;
+            box-shadow:  10px 10px  black , 12px 12px 5px 10px blue;
+        }
+        #para{
+            color: rgb(0, 11, 11);
+            font-weight: 800;
+            font-size: 24px;
+            text-shadow: 10px 12px 0px brown , 2px 2px white;
+        }
+    </style>
+</head>
+<body>
+    <div id="one">
+    <img src="sun.jpg" alt="image" id="image">
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, at minus. Dolore omnis hic sed quam distinctio quisquam officia modi architecto est tempore, perferendis, placeat at nulla voluptas? Numquam, dignissimos.</p>
+    </div>
+</body>
+</html>

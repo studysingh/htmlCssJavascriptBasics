@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <table class="calc" border="2px solid black">
+        <tr>
+            <td colspan="2"><input type="text" id="output" placeholder="0" readonly="" ></td>
+            <td><button id="." onclick="makeExp(this.id)">.</button></td>
+            <td><button id="/" onclick="makeExp(this.id)">/</button></td>
+        </tr>
+        <tr>
+            <td><button id="7" onclick="makeExp(this.id)">7</button></td>
+            <td><button id="8" onclick="makeExp(this.id)">8</button></td>
+            <td><button id="9" onclick="makeExp(this.id)">9</button></td>
+            <td><button id="*" onclick="makeExp(this.id)">*</button></td>
+        </tr>
+        <tr>
+            <td><button id="4" onclick="makeExp(this.id)">4</button></td>
+            <td><button id="5" onclick="makeExp(this.id)">5</button></td>
+            <td><button id="6" onclick="makeExp(this.id)">6</button></td>
+            <td><button id="-" onclick="makeExp(this.id)">-</button></td>
+        </tr>
+        <tr>
+            <td><button id="1" onclick="makeExp(this.id)">1</button></td>
+            <td><button id="2" onclick="makeExp(this.id)">2</button></td>
+            <td><button id="3" onclick="makeExp(this.id)">3</button></td>
+            <td><button id="+" onclick="makeExp(this.id)">+</button></td>
+        </tr>
+        <tr>
+            <td><button id="AC" onclick="acc()">AC</button></td>
+            <td><button id="Cancel" onclick="cancelIt()">Cancel</button></td>
+            <td><button id="0" onclick="makeExp(this.id)">0</button></td>
+            <td><button id="=" onclick="evaluateExpression()">=</button></td>
+        </tr>
+    </table>
+</body>
+<script type="text/javascript" src="calculator.js"></script>
+</html>

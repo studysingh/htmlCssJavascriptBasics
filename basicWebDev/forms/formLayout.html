@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            min-width: 50vw;
+            min-height: 50vh;
+            background: linear-gradient(red,blue);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            font-weight: 800;
+        }
+        .written{
+            color: blue;
+        }
+        input{
+            border: 0px solid;
+            background-color: inherit;
+            border-bottom: 1px solid black;
+            width: 150px;
+            height: 20px;
+        }
+        input:active{
+            border: 0px solid;
+            background-color: green;
+        }
+        form div{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="login" class="written">Username :</label><br>
+            <input type="text" id="login">
+        </div>
+        <div>
+            <label for="pass" class="written">Password :</label><br>
+            <input type="password" id="pass">
+        </div>
+        <div><button>Submit</button></div>
+    </form>
+</body>
+</html>

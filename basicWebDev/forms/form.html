@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form</h1>
+    <form>
+        <label for="naming" name="names">Name : </label>
+        <input type="text" placeholder="Enter your name" id="naming" name="names"> <br><br>
+
+        <label for="number">Phone Number</label>
+        <input type="tel" id="number">
+        <br>
+        <br>
+        <label for="gender">Gender : </label>
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label>
+        <br>
+        <br>
+        <label for="country">Country : </label>
+        <select name="countries" id="country">
+            <option value="">Select your country</option>
+            <optgroup label="Asia">
+                <option value="india">India</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="Sri_lanka">Sri Lanka</option>
+            </optgroup>
+            <optgroup label="Europe">
+                <option value="England">England</option>
+                <option value="Netherland">Netherland</option>
+            </optgroup>
+        </select>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Checkboxes</legend>
+            <input type="checkbox" id="check1" name="checking">
+            <label for="check1">check1</label>
+            <input type="checkbox" name="checking" id="check2">
+            <label for="check2">check2</label>
+        </fieldset>
+        <br>
+        <br>
+        <label for="color">Choose Your Favourite Color : </label>
+        <input type="color" id="color" name="color">
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+    <p>
+        <mark>
+            <b>
+            Note that there is a difference between reset and submit button . To see the difference please see on the url in both the cases . The difference is about to send the information on the server .
+            </b><hr>
+            There is also a optgroup tag in the select tag when we create a dropdown . 
+            <mark>For it we use the label attribute of the optgroup tag which is shown as the group name .</mark>
+            It is used to group some data or we say nesting something . For ex, see it in the select tag in this document .
+        </mark>
+    </p>
+    <ul>
+        <li>color :-> This is an input type used for color picker</li>
+    </ul>
+</body>
+</html>

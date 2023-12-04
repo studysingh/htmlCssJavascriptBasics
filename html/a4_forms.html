@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- forms -->
+    <!-- form 1 Mail ID-->
+    <!-- Note that the for in label and id of input must be same to link them -->
+    <h1>Form 1</h1>
+    <form>
+        <label for="email">Email ID:</label>
+        <input type="text" id="email" value="Enter your email ID">
+        <br/><br/>
+        <label for="password">Password</label>
+        <input type="text" id="password" value="Enter password">
+        <br/><br/>
+        <input type="submit" value="Submit">
+    </form>
+    <!-- placeholder -->
+    <h1>Form 2</h1>
+    <form>
+        <label for="mail">Email ID:</label>
+        <input type="text" id="mail" placeholder="Enter your email ID">
+        <br/><br/>
+        <label for="Password">Password</label>
+        <input type="password" id="Password" placeholder="Enter password">
+        <br/><br/>
+        <input type="submit" value="Submit">
+    </form>
+    <!-- dropdown example -->
+    <h1>Form for dishes</h1>
+    <form>
+        <fieldset>
+            <legend>Practise form</legend>
+        <label for="subject_select">Select your favouriate subject</label>
+        <select name="Subjects" id="subject_select">
+            <option value="Physics">Physics</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="Mathematics">Mathematics</option>
+        </select>
+
+        <br/>
+        <br/>
+
+        <textarea name="give_reason" id="reason" cols="30" rows="10" placeholder="Enter the reason here why it is your favouriate subject..."></textarea>
+    </fieldset>
+    </form>
+</body>
+</html>

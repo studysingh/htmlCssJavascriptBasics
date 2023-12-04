@@ -1,0 +1,13 @@
+span{
+    color: red;
+}
+#submit{
+    background-color: red;
+    color: white;
+    align-items: center;
+}
+#showCaptcha{
+    background-color:bisque;
+    height: 25px;
+    width: 100px;
+}

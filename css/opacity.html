@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opacity</title>
+    <style>
+        .main{
+            color: rgb(72, 149, 50);
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+        }
+        .main:hover{
+            transition: 1s;
+            color: red;
+            font-size: 30px;
+            background-color: rgb(23,45,78);
+        }
+        .second{
+            height: 90px;
+            width: 200px;
+            border: 2px solid;
+            text-align: center;
+            padding-top: 90px;
+            background-color: rgb(23,43,87);
+            color: rgb(200,34,56);
+            opacity: 1;
+            position: relative;
+            left: 200px;
+            transition: 5s;
+        }
+        .second:hover{
+            font-size: 38px;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="main">
+            transition
+        </div>
+        <div class="second">
+            Opacity
+        </div>
+    </div>
+</body>
+</html>
